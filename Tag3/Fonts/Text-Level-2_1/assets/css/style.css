@@ -1,0 +1,47 @@
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: gray;
+  text-shadow: 10px 2px 10px black;
+}
+
+h2 {
+    text-shadow: 0px 0px 2px;
+    letter-spacing: 8px;
+    text-indent:  10px;
+}
+
+body p:nth-of-type(1)
+{
+    text-indent: 30px;
+    font-family:  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 8px;
+    margin-left: 20px;
+}
+
+body p:nth-of-type(2)
+{
+    text-indent: 30px;
+    word-spacing: 8px;
+    word-spacing: 8px;
+    margin-left: 20px;
+}
+
+body p:nth-of-type(3)
+{
+    text-indent: 30px;
+    background-color: lightgray;
+    height: 20px;
+    
+}
+
+body p:nth-of-type(4)
+{
+    padding-top: 5px;
+    text-indent: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+}

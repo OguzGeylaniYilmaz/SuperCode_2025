@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Maven_Pro";
+  src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Gilda";
+  src: url("../fonts/Gilda_Display/GildaDisplay-Regular.ttf");
+}
+
+header {
+  background-color: #333333;
+  width: 100%;
+  height: 694px;
+  padding: 15px 20px;
+}
+
+header p {
+  font-family: "Maven_Pro", sans-serif;
+  font-size: 17.6px;
+  letter-spacing: 4px;
+  color: #949494;
+  margin-left: 20px;
+}
+
+header p:nth-of-type(2) {
+  text-indent: 4px;
+}
+
+div {
+  background: linear-gradient(45deg, rgba(255, 0, 255, 0.475) 20%, rgba(39, 39, 240, 0.88) 50%, #48CEFA 100%);
+  width: 300px;
+  height: 227px;
+  top: 126px;
+  margin: 15vh auto;
+  border-radius: 8px;
+  padding: 0px 20px;
+}
+
+h2 {
+  font-family: "Gilda", sans-serif;
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+div p {
+  width: 237px;
+  font-family: 'Maven_Pro',sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400px;
+}
+
+ul li {
+  
+}

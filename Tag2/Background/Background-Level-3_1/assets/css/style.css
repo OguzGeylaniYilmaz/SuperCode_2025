@@ -1,0 +1,10 @@
+
+
+section {
+    display: block;
+    height: 100vh;
+    background-image: url("../img/laptop.jpg");
+    background-position: center;
+    background-size: cover;
+
+}

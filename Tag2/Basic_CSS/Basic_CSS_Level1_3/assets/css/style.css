@@ -1,0 +1,35 @@
+header {
+    background-color: lightgray;
+}
+
+h4,a {
+  color: orangered;
+}
+
+span {
+  color: orangered;
+  margin-bottom: 20px;
+}
+#img1 {
+  width: 400px;
+  height: 400px;
+  alt: "pic";
+}
+
+#img2 {
+  width: 600px;
+  height: 600px;
+  margin-top: 20px;
+  alt: "pic2";
+}
+
+#img3 {
+  width: 800px;
+  height: 600px;
+  margin-top: 20px;
+  alt: "pic2";
+}
+
+li {
+    list-style-type: none;
+}

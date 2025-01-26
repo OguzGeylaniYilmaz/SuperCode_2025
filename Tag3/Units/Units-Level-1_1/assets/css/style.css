@@ -1,0 +1,30 @@
+
+
+
+#pic1 {
+  width: 400px;
+  height: auto;
+}
+
+#pic2 {
+  width: 40%;
+  height: auto;
+}
+
+#pic3 {
+  width: 20em;
+  height: auto;
+}
+
+#pic4 {
+  width: 40rem;
+  height: auto;
+}
+#pic5 {
+  width: 35vw;
+  height: auto;
+}
+#pic6 {
+  width: 75vh;
+  height: auto;
+}

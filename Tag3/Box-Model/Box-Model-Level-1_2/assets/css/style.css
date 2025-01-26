@@ -1,0 +1,20 @@
+div {
+  width: 460px;
+  height: 110px;
+  background-color: white;
+  text-align: justify;
+  border: 2px solid black;
+  
+}
+
+p {
+  width: 400px;
+  background-color: aqua;
+  border: 5px solid black;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
