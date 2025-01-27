@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 3px #ffcc00 solid;
+}
+
+div p::before{
+    content: "Info";
+    background-color: #ffcc00;
+    font-weight: bold;
+}
+
+div p::after {
+  color: orange;
+  font-family: bold;
+  content: "\2665";
+}
+
+div p::selection {
+    color: orange;
+    text-decoration: underline;
+}
