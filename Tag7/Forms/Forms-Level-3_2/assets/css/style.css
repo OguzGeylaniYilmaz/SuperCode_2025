@@ -1,0 +1,79 @@
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+form {
+  margin-top: 4rem;
+  text-align: center;
+  width: 380px;
+  background-color: darkslategray;
+  height: 380px;
+  margin-left: 40%;
+  
+}
+
+a {
+  display: inline-block;
+  text-decoration-line: none;
+  color: white;
+  width: 170px;
+  height: 30px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+a:hover {
+  background-color: rgb(47, 255, 127);
+}
+
+h2 {
+  color: white;
+}
+
+input {
+  height: 30px;
+  background-color: darkslategray;
+}
+
+.ps-email {
+  margin-top: 1.5rem;
+  width: 338px;
+}
+
+#btn_get_started {
+  margin-top: 24px;
+  width: 340px;
+  font-size: large;
+  height: 50px;
+  color: white;
+  letter-spacing: 5px;
+  background-color: rgb(47, 255, 127);
+}
+
+
+#firstname {
+    width:340px ;
+    background-color: aqua;
+    height: 30px;
+    background-color: darkslategray;
+}
+
+.link {
+    font-size: 30px;
+    text-align: right;
+    text-decoration-line: var(--text-decoration-line);
+}
+
+#login {
+    margin-top: 40px;
+    width: 340px;
+    font-size: large;
+    height: 50px;
+    color: white;
+    letter-spacing: 4px;
+    background-color: rgb(47, 255, 127);
+}
