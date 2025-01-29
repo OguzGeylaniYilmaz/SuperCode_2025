@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Forms-Level-2_3</title>  
+    <title>Forms-Level-2_3</title>
 </head>
+
 <body>
-    <form>
-        <fieldset>
-            <legend>Register Form</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Name">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" placeholder="Surname">
+    <fieldset>
+        <legend>Register Form</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" class="padding" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td>Surname</td>
+                    <td><input type="text" class="padding" placeholder="Surname"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" class="padding" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" class="padding" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Picture</td>
+                    <td><input class="padding" type="file" name="file"></td>
+                </tr>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Email">
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select id="country" class="padding" name="country">
+                            <option value="germany">Germany</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </td>
+                </tr>
 
-            <label>Gender</label>
-            <div class="gender">
-                <input type="radio" id="male" name="gender" checked>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" checked>
-                <label for="female">Female</label>
-            </div>
+                <tr>
+                    <td>Preferred Languages</td>
+                    <td>
+                        <select id="languages" class="padding" name="languages" multiple>
+                            <option>HTML</option>
+                            <option>Css</option>
+                            <option>JS</option>
+                            <option>React</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fieled of activity
+                    </td>
+                    <td>
+                        <input type="checkbox" id="it" class="countries_and_activity" name="activity" value="IT">IT
+                        <input type="checkbox" id="it" name="activity" value="IT">Design
+                        <input type="checkbox" id="it" name="activity" value="IT">Other
+                    </td>              
+                </tr>
+            </table>
+        </form>
+      
 
-            <label for="picture">Picture</label>
-            <input type="file" id="picture">
+        <button type="submit">Send</button>
+        <button type="reset">Cancel</button>
 
-            <label for="country">Country</label>
-            <select id="country">
-                <option>Germany</option>
-                <option>USA</option>
-                <option>France</option>
-            </select>
-            <label for="languages">Preferred Languages</label>
-            <select id="languages" multiple>
-                <option>HTML</option>
-                <option>CSS</option>
-                <option>JavaScript</option>
-                <option>React</option>
-            </select>
-            <p class="note">(To choose more than one use CMD key)</p>
+    </fieldset>
 
-            <label>Field of Activity</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="it">
-                <label for="it">IT</label>
-                <input type="checkbox" id="design">
-                <label for="design">Design</label>
-                <input type="checkbox" id="other">
-                <label for="other">Other</label>
-            </div>
-
-            <div class="buttons">
-                <button type="submit">Send</button>
-                <button type="reset">Cancel</button>
-            </div>
-        </fieldset>
-    </form>
 </body>
+
 </html>

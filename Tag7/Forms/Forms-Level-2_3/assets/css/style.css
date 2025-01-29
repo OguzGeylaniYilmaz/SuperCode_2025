@@ -1,8 +1,20 @@
 
 
-
 fieldset {
-    height: 320px;
     border: 2px solid gray;
+    padding: 15px;
+    height: 18rem;
 }
 
+
+.padding {
+    margin-left: 80px;
+}
+
+.picture {
+    margin-left: 90px;
+}
+
+.countries_and_activity {
+    margin-left: 90px;
+}
