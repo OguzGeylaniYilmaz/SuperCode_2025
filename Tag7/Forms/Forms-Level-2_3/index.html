@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms-Level-2_3</title>  
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Register Form</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+            <br>    
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" placeholder="Surname">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" checked>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="picture">Picture</label>
+            <input type="file" id="picture">
+
+            <label for="country">Country</label>
+            <select id="country">
+                <option>Germany</option>
+                <option>USA</option>
+                <option>France</option>
+            </select>
+            <label for="languages">Preferred Languages</label>
+            <select id="languages" multiple>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>React</option>
+            </select>
+            <p class="note">(To choose more than one use CMD key)</p>
+
+            <label>Field of Activity</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="it">
+                <label for="it">IT</label>
+                <input type="checkbox" id="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="other">
+                <label for="other">Other</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

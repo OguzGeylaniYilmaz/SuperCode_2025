@@ -1,0 +1,10 @@
+
+
+fieldset {
+    height: 100px;
+    border: 2px solid gray;
+}
+
+button{
+    margin-top: 1rem;   
+}
