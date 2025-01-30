@@ -80,14 +80,46 @@ main section {
   margin-top: 200px;
 }
 
-h1 {
+section h1 {
   font-size: 120px;
   opacity: 0.05;
   margin-left: 30px;
 }
 
-h3{
+section h3{
   margin-top: -40px;
   font-size: 36px;
   margin-left: 40px;
+}
+
+.text {
+  font-family: 'Maven_Pro';
+  font-weight: 400;
+  width: 691px;
+  height: 76;
+  font-size: 16px;
+  line-height: 18.6px;
+  text-align: justify;
+  margin: 30px 0 0 30px;
+}
+
+article {
+  margin-top: 120px;
+  text-align: center;
+}
+
+article img {
+  
+  width: 695px;
+  height: 434px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article p:nth-of-type(1)
+{
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 40px;
 }
