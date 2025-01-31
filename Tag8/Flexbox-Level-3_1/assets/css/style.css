@@ -51,7 +51,6 @@ nav a {
   color: #4c4c4c;
 }
 
-
 section {
   color: white;
   width: 80vw;
@@ -74,7 +73,29 @@ section h2 {
   line-height: 24px;
   font-size: 14px;
   font-weight: 400;
-  padding:20px 0 0 440px;
+  padding: 20px 0 0 440px;
+}
+.center-2 {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 430px;
+  justify-content: space-between;
+  width: 380px;
 }
 
+button {
+  color: white;
+  border: 2px solid white;
+  height: 30px;
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+  text-transform: uppercase;
+}
 
+.center-2 button:nth-of-type(1) {
+  background-color: #745cf9;
+}
+.center-2 button:nth-of-type(2) {
+  background: transparent;
+}
