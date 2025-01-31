@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Lato", serif;
+  src: url("../fonts/Lato/Lato-Black.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbe9e3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-family: 'Lato',sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Main */
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.container h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card span {
+  display: block;
+  text-align: right;
+}
