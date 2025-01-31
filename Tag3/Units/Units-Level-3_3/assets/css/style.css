@@ -103,17 +103,15 @@ section h3{
   margin: 30px 0 0 30px;
 }
 
-article {
-  margin-top: 120px;
+.center {
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 70px;
 }
 
 article img {
-  
   width: 695px;
   height: 434px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 article p:nth-of-type(1)
@@ -122,4 +120,8 @@ article p:nth-of-type(1)
   font-weight: 700;
   font-size: 2rem;
   margin-top: 40px;
+}
+
+article p {
+  margin-right: 500px;
 }
