@@ -5,64 +5,131 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --primary-font: "Cormorant Garamond", sans-serif;
+html {
+  color: #333333;
+  font-size: 10px;
 }
 
-img {
-  max-width: 100%;
-}
 
 .container {
   background-color: #e9e9e0;
-  text-align: center;
-  font-family: var(--primary-font);
+  padding: 20px 36px 20px 36px;
 }
 
-.header_text {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 5px 0 5px 0;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
+p {
+  font-family: "Cormorant Garamond";
+  font-size: 16px;
 }
+
+h3 {
+  font-size:  2.4rem;
+  font-weight: 500;
+}
+
+/* ! Header */
 
 header {
-  padding-top: 15px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-/* !Main */
+header h1 {
+  font-family: "Cormorant Garamond";
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10vw 5px 10vw;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+}
+
+/* ! Main */
 
 main {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  column-gap: 2rem;
+  column-gap: 15px;
 }
 
-main .link_content {
+
+main .articles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-.link_content .title {
-  text-align: center;
+.articles .text {
   grid-column: 1/-1;
+  text-align: center;
 }
 
-.link_content .article_3,
-.article_5 {
+.articles .text h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 3.5rem;
+}
+
+.articles .arct_3 {
   grid-column: 1 / span 1;
 }
 
-.link_content .pic {
+.articles .arct_5 {
+  grid-column: 1 / span 1;
+}
+
+.articles .pic {
   grid-column: 3 / span 2;
   grid-row: 2 / span 3;
-  width: 470px;
-  height: 700px;
+}
+
+.articles .pic p {
+  font-family: "Cormorant Garamond";
+}
+
+.sidebar div {
+  margin-bottom: 2rem;
+  border:  4px solid #333333;
+  padding: 20px;
+}
+.sidebar h5 {
+  font-size: 19px;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar h4 {
+  font-family: "Cormorant Garamond";
+  font-size: 50px;
+  text-align: center;
+}
+
+.first {
+  text-align: center;
+}
+
+.second h3 {
+  margin-bottom: 30px;
+}
+
+.second p {
+  margin-bottom: 30px;
+}
+
+.second a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #737b80;
+  border-bottom: 1px solid;
+}
+
+img {
+  max-width: 100%;
 }
