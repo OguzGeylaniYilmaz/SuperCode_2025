@@ -70,30 +70,80 @@ header h2 {
 
 /* !Main */
 
-section {
+.story {
   background-color: black;
   color: white;
-  padding: 200px 0 200px 80px;
+  padding: 150px 0 200px 80px;
 }
 
 .highlight {
-  max-width: 600px;
-  font-size: 50px;
+  margin-left: 100px;
+  font-size: 70px;
 }
 
 .stats {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 40px;
-  margin-top: 40px;
+  margin: 6.25rem 0 0 6.25rem;
 }
 
 .label {
   font-size: 14px;
-  opacity: 0.7;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
 }
 
 .number {
-  font-size: 32px;
+  font-size: 70px;
   font-weight: bold;
 }
+
+ section .map {
+  width: 440px;
+  height: 540px;
+  position: absolute;
+  right: 20px;
+}
+
+
+.rectangle {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.content {
+  max-width: 500px;
+  margin: 150px auto;
+}
+
+.content h2 {
+ 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.content p {
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.floating-img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+}
+
+ /* !Image Positioning */
+.img1 { top: -12rem; right: 5rem; }
+.img2 { top: 30px; left: 20px; }
+.img3 { bottom: 300px; left: 20%; }
+.img4 { top: 300px; right: 10%; }
+.img5 { bottom: 50px; left: 5%; }
+.img6 { bottom: 10px; right: 20px; }
+.img6 { bottom: 10px; right: 20px; }
