@@ -1,12 +1,6 @@
-@font-face {
-  font-family: "Alegreya SC", serif;
-  src: url("../fonts/Alegreya_SC/AlegreyaSC-Medium.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;700&display=swap");
 
-@font-face {
-  font-family: "Nixie One", serif;
-  src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
 
 * {
   margin: 0;
@@ -44,7 +38,7 @@ header {
 .container a {
   text-decoration: none;
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .centered {
@@ -52,7 +46,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 710px;
   text-align: center;
 }
 
@@ -71,7 +65,7 @@ header {
 
   font-family: "Alegreya SC";
   color: white;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* !Main */
@@ -130,6 +124,8 @@ header {
   transform: scale(1.05);
 }
 
+/* !Service */
+
 .services {
   background: url("../img/service.png");
   background-size: cover;
@@ -159,10 +155,10 @@ header {
 
 .service-content {
   height: 210px;
-  width: 1170px;
   margin-top: 50px;
 
   display: flex;
+  column-gap: 10px;
 }
 
 .service-content div {
@@ -220,9 +216,18 @@ header {
   margin-bottom: 20px;
 }
 
+.blog-section h2 {
+  color: #3a4f52;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  font-family: "Alegreya SC";
+}
+
 .blog-section p {
   font-size: 14px;
-  font-family: "Helvetica Neue", serif;
+  line-height: 20px;
+  color: #6a6a6a;
 }
 
 .blog-section a {
@@ -230,9 +235,9 @@ header {
   color: #4da7ca;
 }
 
-.col-sm-1 {
-  width: 390px;
-  height: 433px;
+.blog-header p {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #6a6a6a;
 }
 
 .view-all {
@@ -243,9 +248,14 @@ header {
   cursor: pointer;
 }
 
-.view-all:hover{
+.view-all:hover {
   background-color: gray;
-  color:white;
+  color: white;
+}
+
+.col-sm-1 {
+  width: 390px;
+  height: 433px;
 }
 
 .col-sm-2 {
@@ -436,6 +446,10 @@ textarea {
 form textarea {
   height: 55px;
   resize: none;
+}
+
+form input::placeholder,
+textarea::placeholder {
   color: white;
 }
 
@@ -453,4 +467,29 @@ form textarea {
 .say-hello:hover {
   background-color: lightgray;
   color: black;
+}
+
+footer {
+  background-color: #2b3e51;
+  height: 140px;
+  padding: 62px 0px 62px 150px;
+}
+
+footer p {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* !Media Queries */
+
+@media screen and (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+  }
 }
