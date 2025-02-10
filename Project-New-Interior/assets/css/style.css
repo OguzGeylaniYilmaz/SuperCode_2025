@@ -19,38 +19,38 @@ header {
   background: url("../img/header.png");
   background-size: cover;
   background-position: center;
+  height: 810px;
 }
 
-.container {
+header section .heading {
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 30px;
-  height: 100px;
+  align-items: center;
 }
 
-.container h1 {
+.header-content {
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
   color: white;
   font-family: "Alegreya SC", serif;
   font-size: 36px;
 }
 
-.container a {
+.heading a {
   text-decoration: none;
   color: white;
   font-size: xx-large;
 }
 
-.centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 710px;
-  text-align: center;
-}
-
-.centered h1 {
+.header-content h1 {
   font-family: "Nixie One", serif;
   font-size: 56px;
   color: white;
@@ -58,70 +58,108 @@ header {
   line-height: 56px;
 }
 
-.centered p {
+.header-content p {
   font-size: 22.4px;
   font-weight: 400;
   line-height: 56px;
 
   font-family: "Alegreya SC";
   color: white;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* !Main */
 
 .portfolio {
-  width: 100%;
   max-width: 1440px;
   margin: auto;
   padding: 50px 30px;
+  height: 800px;
+}
+
+.portfolio-container {
+  height: 623px;
+  margin: 30px 135px 60px 135px;
 }
 
 .portfolio-header {
+  margin: 0 15px 60px 15px;
+  height: 75px;
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.portfolio-header h1 {
+  color: #3a4f52;
+  font-size: 36px;
+  font-family: "Alegreya SC";
+  font-weight: 500;
+  line-height: 39.6px;
   margin-bottom: 20px;
 }
 
-.portfolio-header h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-}
 .portfolio-header p {
-  font-size: 16px;
-  color: #777;
-  margin-top: 5px;
-  margin-bottom: 30px;
+  color: #6a6a6a;
+  line-height: 20px;
+  font-family: "Helvetica Neue", sans-serif;
 }
-.portfolio-header .text-content {
-  max-width: 500px;
+
+.portfolio-grid {
+  height: 488.75px;
+  width: 1170px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-.portfolio-header button {
-  background: transparent;
-  border: 2px solid #333;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.portfolio-header button:hover {
-  background: grey;
-  color: #fff;
-}
-.portfolio-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.portfolio-gallery img {
+
+.image-container {
+  position: relative;
+  overflow: hidden;
   width: 360px;
-  height: 214px;
-  transition: transform 0.3s;
+  height: 214.38px;
 }
-.portfolio-gallery img:hover {
-  transform: scale(1.05);
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.6);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.image-container:hover .btn {
+  opacity: 1;
+}
+
+.btn:hover {
+  background: white;
+  color: gray;
 }
 
 /* !Service */
@@ -131,7 +169,9 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   object-fit: cover;
+
   height: 562px;
   padding: 80px 135px 80px 170px;
 }
@@ -179,6 +219,8 @@ header {
   font-weight: 500;
   line-height: 20px;
   color: white;
+
+  padding-left: 30px;
 }
 
 /* !Blog */
@@ -199,6 +241,13 @@ header {
   display: flex;
   justify-content: space-between;
   margin-left: 15px;
+}
+
+.blog-header h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #3a4f52;
+  line-height: 39.6px;
 }
 
 .blog-section {
@@ -236,7 +285,7 @@ header {
 }
 
 .blog-header p {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: #6a6a6a;
 }
 
@@ -279,6 +328,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 
+  background-attachment: fixed;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,7 +362,8 @@ header {
 }
 
 .overlay button:hover {
-  background: var(--common-color);
+  background: white;
+  color: #6a6a6a;
 }
 
 /* !Testimonial */
@@ -347,6 +399,8 @@ header {
   font-size: 36px;
   font-weight: 500;
   line-height: 40px;
+  font-family: "Alegreya SC";
+  color: #3a4f52;
 }
 
 .author {
@@ -383,6 +437,8 @@ header {
   height: 495px;
   padding: var(--custom-padding);
   background: url("../img/contact_header.png") no-repeat center center/cover;
+
+  background-attachment: fixed;
 
   display: flex;
   justify-content: center;
@@ -491,5 +547,28 @@ footer p {
 
   .testimonials-container {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-widtd: 430px) {
+  .testimonials-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 30px;
+    
+  }
+
+  .image-container {
+    width: 100%;
   }
 }
